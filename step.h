@@ -25,7 +25,7 @@ class step{
         digitalWrite(ms1, ms==2||ms>4);
         digitalWrite(ms2, ms>2);
         digitalWrite(ms3, ms==16);
-        for(pos=pos, pos!=cord, pos+=copysign(1, cord-pos)){
+        for(pos=po; pos!=cord; pos+=copysign(1, cord-pos)){
             digitalWrite(step, 1);
             delay(256-speed);
             digitalWrite(step, 0);
