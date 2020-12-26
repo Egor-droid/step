@@ -19,7 +19,7 @@ class step{
         pinMode(ms2, OUTPUT);
         pinMode(ms3, OUTPUT);
     }
-    void move(short cord=0, bool rel=0, byte speed=128, byte ms=16, short pos=pos){
+    void move(short cord=0, bool rel=0, byte speed=128, byte ms=16){
         cord+=pos*rel;
         digitalWrite(dir, pos>cord);
         digitalWrite(ms1, ms==2||ms>4);
@@ -31,6 +31,9 @@ class step{
             digitalWrite(step, 0);
             delay(256-speed);
         }
+    }
+    void pos(short pos){
+        pos=pos;
     }
 };
 #endif // STEP_H_INCLUDED
