@@ -32,7 +32,7 @@ class step{
             delay(256-speed);
         }
     }
-    void pos(short pos){
+    void setpos(short pos){
         pos=pos;
     }
 };
