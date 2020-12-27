@@ -32,8 +32,5 @@ class step{
             delay(256-speed);
         }
     }
-    void setpos(short pos){
-        pos=pos;
-    }
 };
 #endif // STEP_H_INCLUDED
