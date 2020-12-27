@@ -6,7 +6,7 @@ class step{
     byte ms1;
     byte ms2;
     byte ms3;
-    short pos=0;
+    long pos=0;
     step(byte step, byte dir, byte ms1, byte ms2, byte ms3){
         step=step;
         dir=dir;
@@ -19,7 +19,7 @@ class step{
         pinMode(ms2, OUTPUT);
         pinMode(ms3, OUTPUT);
     }
-    void move(short cord=0, bool rel=0, byte speed=128, byte ms=16){
+    void move(long cord=0, bool rel=0, byte speed=128, byte ms=16){
         cord+=pos*rel;
         digitalWrite(dir, pos>cord);
         digitalWrite(ms1, ms==2||ms>4);
