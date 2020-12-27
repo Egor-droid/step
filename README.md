@@ -1,7 +1,8 @@
 # step
 Конструктор
 ```c++
-step(STEP, DIR, MS1, MS2, MS3)```
+step(STEP, DIR, MS1, MS2, MS3)
+```
 Позиция (1/16 шага)
 pos
 Движение
