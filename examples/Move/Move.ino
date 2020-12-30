@@ -1,7 +1,7 @@
 #include <step.h>
 
 void setup() {
-  step mot=step(0, 1, 2, 3, 4);
+  step mot(0, 1, 2, 3, 4);
   mot.move(100000);
 
 }
