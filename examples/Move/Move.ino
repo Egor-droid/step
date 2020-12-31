@@ -1,8 +1,8 @@
 #include <step.h>
 
 void setup() {
-  step mot(0, 1, 2, 3, 4);
-  mot.move(100000);
+  step mot(0, 1, 2, 3, 4, 4096*16/360);
+  mot.move(10);
 
 }
 
